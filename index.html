@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportschool Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+    <h2>Wat wil je doen?</h2>
+    <button id="toegangButton">Toegang sportschool</button>
+    <button id="inschrijvenCursusButton">Inschrijven cursus</button>
+    <button id="afspraakCoachButton">Afspraak personal coach</button>
+    <button id="annulerenButton">Abonnement annuleren</button>
+</div>
+
+<!-- Modal voor afspraak met personal coach -->
+<div id="afspraakModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Afspraak personal coach</h2>
+        <label for="datum">Datum (yyyy-mm-dd):</label>
+        <input type="text" id="datum" placeholder="2023-09-12">
+        <label for="tijd">Tijd (HH:mm):</label>
+        <input type="text" id="tijd" placeholder="12:30">
+        <button id="bevestigAfspraak">Bevestigen</button>
+    </div>
+</div>
+
+<!-- Modal voor abonnement annuleren -->
+<div id="annulerenModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Weet je zeker dat je je abonnement wilt annuleren?</p>
+        <button id="bevestigAnnuleren">Ja</button>
+        <button id="annuleerAnnuleren">Nee</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
